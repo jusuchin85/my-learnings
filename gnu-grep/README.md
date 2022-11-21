@@ -8,7 +8,7 @@
 
 ## Simple commands
 
-Example file: [`programming_quotes.txt`](https://github.com/learnbyexample/learn_gnugrep_ripgrep/blob/master/example_files/freq_options/programming_quotes.txt)
+> Example file: [`programming_quotes.txt`](https://github.com/learnbyexample/learn_gnugrep_ripgrep/blob/master/example_files/freq_options/programming_quotes.txt)
 
 | Criteria                                           |                      `grep` Command                      |                             Manual Reference                            |
 |----------------------------------------------------|:--------------------------------------------------------:|:-----------------------------------------------------------------------:|
@@ -29,3 +29,21 @@ Example file: [`programming_quotes.txt`](https://github.com/learnbyexample/learn
 | Output exact match                                 | `grep -x '[keyword]' [file]`                             | [Link](https://www.gnu.org/software/grep/manual/grep.html#index-_002dx) |
 | Common lines between two files                     | `grep -Fxf [file1] [file2]`                              |                                                                         |
 | Extract only matching pattern                      | `grep -o '[keyword]' [file]`                             | [Link](https://www.gnu.org/software/grep/manual/grep.html#index-_002do) |
+
+## Basic Regular Expression (BRE) / Extended Regular Expression (ERE) Regular Expressions
+
+> Example files: [`word_anchors.txt` and `words.txt`](https://github.com/learnbyexample/learn_gnugrep_ripgrep/tree/master/example_files/bre_ere)
+
+Typical commands:
+
+| Options | Description                                                                                                                                          |                             Manual Reference                            |
+|:-------:|------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|
+|   `-G`  | can be used to specify explicitly that BRE is needed                                                                                                 | [Link](https://www.gnu.org/software/grep/manual/grep.html#index-_002dG) |
+|   `-E`  | will enable Extended Regular Expression (ERE). In GNU `grep`, BRE and ERE only differ in how metacharacters are specified, no difference in features | [Link](https://www.gnu.org/software/grep/manual/grep.html#index-_002dE) |
+|   `-F`  | will cause the search patterns to be treated literally                                                                                               | [Link](https://www.gnu.org/software/grep/manual/grep.html#index-_002dF) |
+|   `-P`  | will enable Perl Compatible Regular Expression (PCRE) (if available)                                                                                 | [Link](https://www.gnu.org/software/grep/manual/grep.html#index-_002dP) |
+
+### Line Anchors
+
+- `^` — start of line
+- `$` — end of line
