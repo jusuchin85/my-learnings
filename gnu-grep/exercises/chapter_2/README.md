@@ -82,7 +82,7 @@ Format for the exercise is:
 1.  Find total count of whole word `the` (irrespective of case):
 
     ```text
-    7941
+    8090
     ```
 
     ```bash
@@ -125,4 +125,3 @@ Format for the exercise is:
 
     2559
     ```
-    

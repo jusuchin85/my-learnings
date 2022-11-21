@@ -1,7 +1,24 @@
 # GNU grep
 
-> Learnings from [GNU GREP and RIPGREP](https://learnbyexample.gumroad.com/l/gnugrep_ripgrep?layout=profile) by [Sundeep Agarwal](https://learnbyexample.gumroad.com/)
+Learnings from [GNU GREP and RIPGREP](https://learnbyexample.gumroad.com/l/gnugrep_ripgrep?layout=profile) by [Sundeep Agarwal](https://learnbyexample.gumroad.com/)'
 
+> Ensure that the version of `grep` you're using is 3.7 and above (the default that comes with MacOS is 2.6):
+>
+> ```bash
+> grep --version
+> 
+> grep (GNU grep) 3.8
+> Packaged by Homebrew
+> Copyright (C) 2022 Free Software Foundation, Inc.
+> License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+> This is free software: you are free to change and redistribute it.
+> There is NO WARRANTY, to the extent permitted by law.
+> 
+> Written by Mike Haertel and others; see
+> <https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>.
+> ```
+>
+> You can install this (as well as others using [Homebrew](gnu-essentials-mac.md))
 ## Exercises
 
 - [Chapter 2](exercises/chapter_2/README.md)
