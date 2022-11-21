@@ -1,6 +1,10 @@
 # GNU grep
 
-> Learnings from [learnbyexample](https://learnbyexample.gumroad.com/).
+> Learnings from [GNU GREP and RIPGREP](https://learnbyexample.gumroad.com/l/gnugrep_ripgrep?layout=profile) by [Sundeep Agarwal](https://learnbyexample.gumroad.com/)
+
+## Exercises
+
+- [Chapter 2](exercises/chapter_2/README.md)
 
 ## Simple commands
 
