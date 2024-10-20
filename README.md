@@ -6,3 +6,4 @@ Contains a collection of READMEs for the various areas of my learning. Some exer
 
 - [GNU `grep` and `ripgrep`](gnu-grep/)
 - [LDAP](ldap/)
+- [Pro Git](pro-git/)
