@@ -1,5 +1,21 @@
 # Chapter 1: Getting Started
 
+## The 3 States of `.git`
+
+```mermaid
+sequenceDiagram
+    participant work as Working<br/>Directory
+    participant stage as Staging<br/>Area
+    participant repo as .git directory<br/>(Repository)
+
+
+    repo-->>work: checkout the project
+    activate work
+    work-->>stage: stage fixes
+    deactivate work
+    stage-->>repo: commit
+```
+
 ## Command Line Basics
 
 View where all `.gitconfig` settings are loaded from:
