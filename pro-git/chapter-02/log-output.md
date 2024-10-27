@@ -74,7 +74,11 @@ For example, to see commits in the Git repository [^1] that:
 - not merge commits
 
 ```shell
-git log --pretty=format:"%h - %an, %ad : %s" --author="Junio C Hamano" --since="2008-10-01" --before="2008-11-01" --no-merges -- t/
+git log --pretty=format:"%h - %an, %ad : %s" \
+        --author="Junio C Hamano" \
+        --since="2008-10-01" \
+        --before="2008-11-01" \
+        --no-merges -- t/
 
 5610e3b031 - Junio C Hamano, Sun Oct 19 22:51:17 2008 -0700 : Fix testcase failure when extended attributes are in use
 acd3b9eca8 - Junio C Hamano, Fri Oct 17 15:44:39 2008 -0700 : Enhance hold_lock_file_for_{update,append}() API
