@@ -1,7 +1,5 @@
 # Chapter 2: Git Basics
 
-## Table of Contents
-
 - [Lifecycle of the Status of a File](lifecycle.md)
 - [More on the `git status` Command](status.md)
 - [Ignoring Files](ignoring-files.md)
@@ -20,3 +18,16 @@
   - [`git log --since=<n>`](log-output.md#git-log---sincen)
   - [`git log -S <string>`](log-output.md#git-log--s-string)
   - [Common options to limit output to `git-log`](log-output.md#common-options-to-limit-output-to-git-log)
+- [Undoing Things](undoing.md)
+- [Working with Remotes](remotes.md)
+  - [Showing Your Remotes](remotes.md#showing-your-remotes)
+  - [Adding Remotes](remotes.md#adding-remotes)
+  - [Fetching and Pulling from Your Remotes](remotes.md#fetching-and-pulling-from-your-remotes)
+  - [Inspecting a Remote](remotes.md#inspecting-a-remote)
+  - [Renaming and Removing Remotes](remotes.md#renaming-and-removing-remotes)
+- [Tagging](tagging.md)
+  - [Listing Your Tags](tagging.md#listing-your-tags)
+  - [Creating Tags](tagging.md#creating-tags)
+    - [Annotated Tags](tagging.md#annotated-tags)
+    - [Lightweight Tags](tagging.md#lightweight-tags)
+  - [Tagging Later](tagging.md#tagging-later)
