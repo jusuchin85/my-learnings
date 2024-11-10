@@ -89,7 +89,7 @@ v1.4
 v1.4-lw
 ```
 
-Now if you run the `git show` command to view the tag data, you'll don't see the extra tag information:
+Now if you run the `git show` command to view the tag data, you won't see the extra tag information:
 
 ```shell
 git show v1.4-lw
