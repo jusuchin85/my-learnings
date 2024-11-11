@@ -59,7 +59,7 @@ From github.com:paulboone/ticgit
  * [new branch]      ticgit     -> pb/ticgit
 ```
 
-What this does are essentially pulling changes from the `pb` remote repository into our own repository. This includes all branches that `pb` has, but we don't on ours; you can then merge or inspect this changes at any time.
+What this does is essentially pulling changes from the `pb` remote repository into our own repository. This includes all branches that `pb` has, but we don't on ours; you can then merge or inspect this changes at any time.
 
 > [!TIP]
 >
