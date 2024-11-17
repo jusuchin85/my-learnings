@@ -1,3 +1,7 @@
+- [Ignoring Files](#ignoring-files)
+  - [Glob patterns](#glob-patterns)
+  - [Example `.gitignore` file\[^2\]](#example-gitignore-file2)
+
 ## Ignoring Files
 
 Rules of `.gitignore` files:

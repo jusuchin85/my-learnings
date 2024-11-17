@@ -1,3 +1,6 @@
+- [Compare Changes Made with `git diff`](#compare-changes-made-with-git-diff)
+- [Removing Files from the Staging Area, but Retaining in the Working Directory](#removing-files-from-the-staging-area-but-retaining-in-the-working-directory)
+
 ## Compare Changes Made with `git diff`
 
 Use `git status` as a primer for this:

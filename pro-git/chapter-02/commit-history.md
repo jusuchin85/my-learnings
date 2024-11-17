@@ -1,3 +1,11 @@
+- [Checking Commit History](#checking-commit-history)
+  - [`git log`](#git-log)
+  - [`git log --patch -<n>`](#git-log---patch--n)
+  - [`git log --stat`](#git-log---stat)
+  - [`git log --pretty=<option>`](#git-log---prettyoption)
+- [Combining the `--pretty` option with the `--graph` option](#combining-the---pretty-option-with-the---graph-option)
+  - [Common options to `git-log`](#common-options-to-git-log)
+
 ## Checking Commit History
 
 > [!TIP]

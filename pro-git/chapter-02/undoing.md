@@ -1,3 +1,8 @@
+- [Undoing Things](#undoing-things)
+  - [Amending the Last Commit](#amending-the-last-commit)
+  - [Unstaging a Staged File](#unstaging-a-staged-file)
+  - [Unmodifying a Modified File](#unmodifying-a-modified-file)
+
 ## Undoing Things
 
 ### Amending the Last Commit
