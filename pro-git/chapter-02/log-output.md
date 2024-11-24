@@ -1,3 +1,8 @@
+- [Limiting Log Output](#limiting-log-output)
+  - [`git log --since=<n>`](#git-log---sincen)
+  - [`git log -S <string>`](#git-log--s-string)
+  - [Common options to limit output to `git-log`](#common-options-to-limit-output-to-git-log)
+
 ## Limiting Log Output
 
 > [!TIP]

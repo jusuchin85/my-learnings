@@ -1,3 +1,15 @@
+- [Tagging](#tagging)
+  - [Listing your Tags](#listing-your-tags)
+  - [Creating Tags](#creating-tags)
+    - [Annotated tags](#annotated-tags)
+    - [Lightweight tags](#lightweight-tags)
+  - [Tagging Later](#tagging-later)
+  - [Sharing Tags](#sharing-tags)
+    - [To push a specific tag to a remote repository](#to-push-a-specific-tag-to-a-remote-repository)
+    - [To push all tags to a remote repository (in cases where there are a lot of tags to push manually)](#to-push-all-tags-to-a-remote-repository-in-cases-where-there-are-a-lot-of-tags-to-push-manually)
+  - [Deleting Tags](#deleting-tags)
+  - [Checking out Tags](#checking-out-tags)
+
 ## Tagging
 
 ### Listing your Tags
@@ -151,4 +163,106 @@ Date:   Mon Nov 11 10:05:14 2024 +1100
 
 ### Sharing Tags
 
-TODO: TBC
+Run `git tag` to show existing tags:
+
+```shell
+git tag
+```
+
+```shell
+v1.0
+v1.4
+v1.4-lw
+```
+
+#### To push a specific tag to a remote repository
+
+```shell
+git push origin <tag>
+```
+
+```shell
+git push origin v1.4
+
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 225 bytes | 225.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:jusuchin85/fuzzy-waffle.git
+ * [new tag]         v1.4 -> v1.4
+```
+
+#### To push all tags to a remote repository (in cases where there are a lot of tags to push manually)
+
+```shell
+git push origin --tags
+```
+
+```shell
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 234 bytes | 234.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:jusuchin85/fuzzy-waffle.git
+ * [new tag]         v1.0 -> v1.0
+ * [new tag]         v1.4-lw -> v1.4-lw
+```
+
+> [!NOTE]
+> `git push <remote> --tags` will push all of your tags — both lightweight and annotated — to a remote repository. If you don't want to push your lightweight tags, you can use the `--follow-tags` option to only push annotated tags.
+
+### Deleting Tags
+
+To delete a tag, you can run the `git tag --delete <tag>` command:
+
+```shell
+git tag --delete v1.4-lw
+
+Deleted tag 'v1.4-lw' (was 05c9df4)
+```
+
+This only deletes the tag on your local repository. To delete the tag on the remote repository, use the `git push origin --delete <tag>` command:
+
+```shell
+git push origin --delete v1.4-lw
+
+To github.com:jusuchin85/fuzzy-waffle.git
+ - [deleted]         v1.4-lw
+```
+
+### Checking out Tags
+
+Checking out tags is similar to switching a branch (using the `git checkout <tag>` command); though this would place your repository in a "detached HEAD" state. This is because you will be checking out a specific commit, and not a branch. To check out a tag, you can run the following command:
+
+```shell
+git checkout v1.0
+```
+
+```shell
+Note: switching to 'v1.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 093b2f8 Initial commit
+```
+
+This workflow is not typically executed, unless in circumstances where you want to raise a commit against the specific version (like a hotfix). In such cases, you can create a new branch from the tag and raise your commit there:
+
+```shell
+git checkout -b <branch> <tag>
+
+Switched to a new branch 'hotfix-1.0'
+```

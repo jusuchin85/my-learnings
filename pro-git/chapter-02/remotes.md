@@ -1,3 +1,10 @@
+- [Working with Remotes](#working-with-remotes)
+  - [Showing Your Remotes](#showing-your-remotes)
+  - [Adding Remotes](#adding-remotes)
+  - [Fetching and Pulling from Your Remotes](#fetching-and-pulling-from-your-remotes)
+  - [Inspecting a Remote](#inspecting-a-remote)
+  - [Renaming and Removing Remotes](#renaming-and-removing-remotes)
+
 ## Working with Remotes
 
 ### Showing Your Remotes

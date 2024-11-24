@@ -31,3 +31,8 @@
     - [Annotated Tags](tagging.md#annotated-tags)
     - [Lightweight Tags](tagging.md#lightweight-tags)
   - [Tagging Later](tagging.md#tagging-later)
+  - [Sharing Tags](tagging.md#sharing-tags)
+    - [To Push a Specific Tag to a Remote Repository](tagging.md#to-push-a-specific-tag-to-a-remote-repository)
+    - [To Push All Tags to a Remote Repository (in Cases Where There Are a Lot of Tags to Push Manually)](tagging.md#to-push-all-tags-to-a-remote-repository-in-cases-where-there-are-a-lot-of-tags-to-push-manually)
+  - [Deleting Tags](tagging.md#deleting-tags)
+  - [Checking Out Tags](tagging.md#checking-out-tags)
