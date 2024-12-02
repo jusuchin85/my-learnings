@@ -212,7 +212,7 @@ c073b74 (HEAD -> main, origin/main) Add command to output my name
 > ```shell
 > git log testing
 > ```
-> 
+>
 > ```
 > commit 9aeb89faa4de6058b75c936ffcdf274d857641fa (testing)
 > Author: Justin Alex Paramanandan <1155821+jusuchin85@users.noreply.github.com>
